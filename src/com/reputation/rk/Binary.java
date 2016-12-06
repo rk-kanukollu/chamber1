@@ -1,6 +1,7 @@
 package com.reputation.rk;
 
 public class Binary {
+	//something
 	public static void main(String[] args) {
 		int array[] = new int[10];
 		int a = 0;
