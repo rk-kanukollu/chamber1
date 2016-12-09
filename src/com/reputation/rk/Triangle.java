@@ -2,9 +2,9 @@ package com.reputation.rk;
 
 public class Triangle {
 	public static void main(String[] args) {
-		int a = 3;
-		int b = 4;
-		int c = 6;
+		float a = (float) 4.1;
+		float b = (float) 4.3;
+		float c = (float) 5.0;
 		if (a + b > c && a + c > b && b + c > a) {
 			System.out.println("triangle");
 			if (a == b && a == c && b == c)

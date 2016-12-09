@@ -1,6 +1,6 @@
 package com.reputation.rk;
 
-public class IpAddress {
+public class Anagrams {
 	public static void main(String[] args) {
 		int a = 234;
 		int array[] = new int[10];
