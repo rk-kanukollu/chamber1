@@ -1,12 +1,14 @@
 package com.reputation.rk;
 
-public class MultiplyUsingString {
-	public static void main(String[] args) {
-		
+public class Exp11 {
 	
-
-		String s1 = new String("534321");
-		String s4 = new String("165732");
+	
+		String emp11(String s1, String s4)
+		{
+			
+		
+		
+		
 		String s3 = new String("");
 		String s2 = s1;
 		int fd = 0;
@@ -161,11 +163,12 @@ public class MultiplyUsingString {
 				s3 = "8" + s3;
 			else if (e == 9)
 				s3 = "9" + s3;
-		//	System.out.println(s3);
+			//System.out.println(s3);
 			s1 = s3;
 			s3 = "";
 		}
-		//System.out.println(s3);
+return s1;
+		}
+		
 
-	}	
 }

@@ -21,5 +21,16 @@ public class Triangle {
 				System.out.println("acute traingle");
 		} else
 			System.out.println("not a triangle");
+		
+		SquareRootRk as = new SquareRootRk();
+		int we = as.sqrt(81);
+		System.out.println(we);
+
+		Exp11 ur = new Exp11();
+		String ty = ur.emp11("23", "11");
+		
+		System.out.println(ty);
+
+		
 	}
 }
