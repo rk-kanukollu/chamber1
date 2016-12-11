@@ -7,5 +7,4 @@ public class SumOfN {
 			x = x + i;
 		System.out.println(x);
 	}
-
 }

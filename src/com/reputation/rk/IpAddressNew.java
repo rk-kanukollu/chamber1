@@ -11,31 +11,22 @@ public class IpAddressNew {
 				x[i] = -1;
 			if (firstLetter.equals("0"))
 				x[i] = 0;
-
 			if (firstLetter.equals("1"))
 				x[i] = 1;
-
 			if (firstLetter.equals("2"))
 				x[i] = 2;
-
 			if (firstLetter.equals("3"))
 				x[i] = 3;
-
 			if (firstLetter.equals("4"))
 				x[i] = 4;
-
 			if (firstLetter.equals("5"))
 				x[i] = 5;
-
 			if (firstLetter.equals("6"))
 				x[i] = 6;
-
 			if (firstLetter.equals("7"))
 				x[i] = 7;
-
 			if (firstLetter.equals("8"))
 				x[i] = 8;
-
 			if (firstLetter.equals("9"))
 				x[i] = 9;
 		}
@@ -52,7 +43,6 @@ public class IpAddressNew {
 		n--;
 		q = 0;
 		g = 256;
-
 		while (x[n] != -1) {
 			q = q + g * x[n];
 			n--;
@@ -73,7 +63,11 @@ public class IpAddressNew {
 		n--;
 		q = 0;
 		g = 256 * 256 * 256;
-		while (x[n] != -1 && n >= 0) {
+		System.out.println(n);
+		System.out.println(x.length);
+
+		while ( n >= 0 && x[n] != -1) {
+			System.out.println(n);
 			q = q + g * x[n];
 			n--;
 			g = g * 10;

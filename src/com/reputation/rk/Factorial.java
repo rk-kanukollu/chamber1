@@ -6,8 +6,6 @@ public class Factorial { // 22 is the test
 		int fd = 0;
 		int fd1 = 0;
 		int fd2 = 1;
-		
-
 		for (int df = s1.length() - 1; df >= 0; df--) {
 			String firstLetter7 = String.valueOf(s1.charAt(df));
 			if (firstLetter7.equals("0"))
@@ -33,8 +31,7 @@ public class Factorial { // 22 is the test
 			fd = fd + fd2 * fd1;
 			fd2 = fd2 * 10;
 		}
-
-		int a = fd-1;
+		int a = fd - 1;
 		for (int i = a; i > 1; i--) {
 			int qw = 0;
 			int qw1 = i;
@@ -61,20 +58,13 @@ public class Factorial { // 22 is the test
 					s2 = "8" + s2;
 				else if (qw == 9)
 					s2 = "9" + s2;
-
 				qw1 = qw1 / 10;
-
 			}
 			System.out.println(s1);
 			System.out.println(s2);
-
 			Exp11 ur = new Exp11();
-			s1 = ur.emp11(s1,s2);
-
-
-
+			s1 = ur.emp11(s1, s2);
 		}
 		System.out.println(s1);
-
 	}
 }

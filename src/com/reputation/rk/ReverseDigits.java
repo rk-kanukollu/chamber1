@@ -1,6 +1,5 @@
 package com.reputation.rk;
 
-import sun.applet.Main;
 
 public class ReverseDigits {
 	public static void main(String[] args) {

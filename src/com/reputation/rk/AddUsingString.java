@@ -7,42 +7,33 @@ public class AddUsingString {
 		String s1 = new String("3657989675");
 		String s2 = new String("54656");
 		String s3 = new String("");
-
 		int length1 = s1.length();
 		int length2 = s2.length();
 		int length3 = 0;
-
 		int difference = 0;
 		if (length1 == length2)
 			length3 = length1;
 		else if (length1 - length2 > 0) {
 			difference = length1 - length2;
 			length3 = length1;
-
 			for (int x = 0; x < difference; x++)
 				s2 = "0" + s2;
 		} else {
 			difference = length2 - length1;
 			length3 = length2;
-
 			for (int x = 0; x < difference; x++)
 				s1 = "0" + s1;
-
 		}
-
 		int a = 0;
 		int b = 0;
 		int c = 0;
 		int d = 0;
 		int e = 0;
-
 		for (int z = (length3 - 1); z >= 0; z--) {
 			String firstLetter1 = String.valueOf(s1.charAt(z));
 			String firstLetter2 = String.valueOf(s2.charAt(z));
-
 			// System.out.println(firstLetter1);
 			// System.out.println(firstLetter2);
-
 			if (firstLetter1.equals("0"))
 				a = 0;
 			if (firstLetter1.equals("1"))
@@ -84,11 +75,9 @@ public class AddUsingString {
 				b = 8;
 			if (firstLetter2.equals("9"))
 				b = 9;
-
 			c = a + b + e;
 			d = c % 10;
 			e = (c - d) / 10;
-
 			if (d == 0)
 				s3 = "0" + s3;
 			else if (d == 1)
@@ -109,12 +98,10 @@ public class AddUsingString {
 				s3 = "8" + s3;
 			else if (d == 9)
 				s3 = "9" + s3;
-
 		}
-
-		if (e == 0)
-			;
-		else if (e == 1)
+		if (e == 0) {
+			// do nothing
+		} else if (e == 1)
 			s3 = "1" + s3;
 		else if (e == 2)
 			s3 = "2" + s3;
@@ -132,11 +119,8 @@ public class AddUsingString {
 			s3 = "8" + s3;
 		else if (e == 9)
 			s3 = "9" + s3;
-
 		System.out.println(s1);
 		System.out.println(s2);
-
 		System.out.println(s3);
-
 	}
 }
